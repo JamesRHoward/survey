@@ -6,9 +6,56 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Survey</title>
   </head>
   <body>
-
+    <div class="container">
+      <div>
+        <h1>What continent are you from?</h1>
+        <form>
+      <select class="form-control" id="continent">
+        <option>North America</option>
+        <option>South America</option>
+        <option>Europe</option>
+        <option>Africa</option>
+        <option>Asia</option>
+        <option>Australia/Oceania</option>
+        <option>Antartica</option>
+      </select>
+      </form>
+      </div>
+    <div class="radio">
+      <h1>How happy are you with your home continent?</h1>
+      <label>
+        <input type="radio" name="happy" value="very" checked>
+        very
+      </lable>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="happy" value="somewhat">
+        somewhat
+      </lable>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="happy" value="not">
+        not
+      </lable>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="happy" value="very-unhappy">
+        very unhappy
+      </lable>
+    </div>
+    <div class="form-group">
+      <lable for="color">What is your continent's color?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
+    <p>
+  <button id="submit" type="button" class="btn btn-primary btn-lg">SUBMIT</button>
+</p>
+  </div>
   </body>
 </html>
